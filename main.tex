@@ -3,7 +3,15 @@
 \setbeamertemplate{frametitle}[default][center]
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}[frame number]
+\setbeamertemplate{itemize items}[circle]
 
+\setbeamercolor{block body alerted}{bg=alerted text.fg!10}
+\setbeamercolor{block title alerted}{bg=alerted text.fg!20}
+\setbeamercolor{block body}{bg=structure!10}
+\setbeamercolor{block title}{bg=structure!20}
+\setbeamercolor{block body example}{bg=green!10}
+\setbeamercolor{block title example}{bg=green!20}
+\setbeamertemplate{blocks}[rounded]%[shadow]
 
 \title{Journal Club}
 \author{Valentin Marteau}
@@ -18,16 +26,32 @@
 \includegraphics[width=0.9\textwidth]{figures/Arnold_2022_title.pdf}
 \end{frame}
 
-
 \begin{frame}{Aim}
+\begin{columns}
+\column{0.7\linewidth}
 
-Tricarboxylic acid (TCA) cycle: 
+\begin{block}{\centering Tricarboxylic acid (TCA) cycle:}
+\vspace{0.2cm}
+    \begin{itemize}
+        \item Central hub of cellular metabolism \\[0.1cm]
+        \item Oxidation of nutrients for energy and metabolite production \\[0.1cm]
+        \item Mammalian cells display diversity in TCA-cycle activity \\[0.1cm]
+    \end{itemize}
+\vspace{0.2cm}
+\end{block}
 
-mammalian cells display diversity in TCA-cycle activity
+\vspace{0.6cm}
 
-How is this diversity achieved?
-Is the TCA cycle critical for establishing cell fate?
+\begin{itemize}
+    \item[$\rightarrow$] \textbf{How is this diversity achieved?} \\[0.3cm]
+    \item[$\rightarrow$] \textbf{Is the TCA cycle critical for establishing cell fate?}
+\end{itemize}
 
+\column{0.3\linewidth}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/Martínez-Reyes_2020_fig2.pdf}\\[0.1cm]
+\tiny{Martínez-Reyes \& Chandel; \textit{Nat. Commun.} (2020)}
+\end{columns}
 \end{frame}
 
 \begin{frame}{DepMap project}
