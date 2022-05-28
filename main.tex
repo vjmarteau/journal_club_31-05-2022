@@ -13,6 +13,10 @@
 \setbeamercolor{block title example}{bg=green!20}
 \setbeamertemplate{blocks}[rounded]%[shadow]
 
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+
 \title{Journal Club}
 \author{Valentin Marteau}
 \date{31.05.2022}
@@ -40,6 +44,7 @@
 \vspace{0.2cm}
 \end{block}
 
+
 \vspace{0.6cm}
 
 \begin{itemize}
@@ -56,22 +61,28 @@
 
 \begin{frame}{DepMap project}
 
+\blfootnote{\includegraphics[width=0.15\textwidth]{figures/depmap_consortium_logo2.pdf}}
+\end{frame}
+
+\begin{frame}{Metabolic gene essentiality correlations across cancer cell lines}
+\centering
+\includegraphics[width=0.74\textwidth]{figures/Arnold_2022_figS1.png}
 \end{frame}
 
 \begin{frame}{Two modes of TCA-cycle metabolism}
-
+\includegraphics[width=\textwidth]{figures/Arnold_2022_fig1.pdf}
 \end{frame}
 
 \begin{frame}{ES cells engage a non-canonical TCA cycle}
-
+\includegraphics[width=0.4\textwidth]{figures/Arnold_2022_fig2.pdf}
 \end{frame}
 
 \begin{frame}{TCA-cycle choice is cell-state dependent}
-
+\includegraphics[width=0.4\textwidth]{figures/Arnold_2022_fig3.pdf}
 \end{frame}
 
 \begin{frame}{TCA-cycle switch after pluripotency exit}
-
+\includegraphics[width=\textwidth]{figures/Arnold_2022_fig4.pdf}
 \end{frame}
 
 \begin{frame}{Exit from pluripotency requires ACL}
@@ -79,7 +90,11 @@
 \end{frame}
 
 \begin{frame}{Summary}
-
+\begin{itemize}
+    \item[$\rightarrow$] \textbf{Identification of a non-canonical TCA cycle required for changes in cell state} \\[0.3cm]
+    \item[$\rightarrow$] \textbf{Genetic co-essentiality mapping revealed gene cluster sufficient to compose alternative to canonical TCA-cycle}
+    \item[$\rightarrow$] \textbf{}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Questions to be addressed}
