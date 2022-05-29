@@ -17,13 +17,21 @@
 \def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
 \makeatother
 
+\usepackage{tikz}
+\setbeamercovered{dynamic}
+
 \title{Journal Club}
 \author{Valentin Marteau}
 \date{31.05.2022}
 
 \begin{document}
+{
+ \usebackgroundtemplate{\includegraphics[width=\paperwidth]{figures/VJM_3542.jpg}}
+  \begin{frame}
+    \titlepage
+  \end{frame}
+}
 
-\frame{\titlepage}
 
 \begin{frame}{Paper}
 \centering
@@ -44,7 +52,7 @@
 \vspace{0.2cm}
 \end{block}
 
-
+%TCA cycle is a hub of metabolism, with central importance in both energy production and biosynthesis
 \vspace{0.6cm}
 
 \begin{itemize}
@@ -61,7 +69,24 @@
 
 \begin{frame}{DepMap project}
 
-\blfootnote{\includegraphics[width=0.15\textwidth]{figures/depmap_consortium_logo2.pdf}}
+\begin{columns}			
+\column{0.5\linewidth}
+
+\includegraphics[width=0.8\textwidth]{figures/depmap_consortium_logo.pdf}\\[0.3cm]
+\begin{itemize}
+    \item Test
+    \item 
+    \item 
+\end{itemize}
+
+\column{0.5\linewidth}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/Tsherniak_2017_graphical_abstract.pdf}\\
+\tiny{Tsherniak \textit{et al}. \textit{Cell} (2017)}
+
+\end{columns}
+
+\blfootnote{\includegraphics[width=0.12\textwidth]{figures/depmap_consortium_logo2.pdf}}
 \end{frame}
 
 \begin{frame}{Metabolic gene essentiality correlations across cancer cell lines}
@@ -70,7 +95,17 @@
 \end{frame}
 
 \begin{frame}{Two modes of TCA-cycle metabolism}
-\includegraphics[width=\textwidth]{figures/Arnold_2022_fig1.pdf}
+
+\begin{figure}
+\pause
+\begin{tikzpicture}
+	\node[anchor=south west,inner sep=0] (B) at (4,0) {\includegraphics[width=\textwidth]{figures/Arnold_2022_fig1.pdf}};
+	\only<1>{%
+	    \fill [draw=none, fill=white, fill opacity=0.7] (B.north west) -- (B.north east) -- (B.south east) -- (B.south west) -- (B.north west) -- cycle;
+	}
+\end{tikzpicture}
+\end{figure}
+	
 \end{frame}
 
 \begin{frame}{ES cells engage a non-canonical TCA cycle}
