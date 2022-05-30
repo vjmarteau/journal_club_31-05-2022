@@ -99,18 +99,53 @@
 \begin{tikzpicture}
 \node[anchor=south west,inner sep=0] (image) at (4,0) {\includegraphics[width=0.98\textwidth]{figures/Arnold_2022_fig1.pdf}};
     \only<2>{%
-        \fill [draw=none, fill=white, fill opacity=0.9] (image.north west) -- (image.north east) -- (image.south east) -- (image.south west) -- (image.north west) -- cycle;
-\node[] at (image.center) {\vbox {\Large
-    {\begin{itemize}
-        \item a \\[0.2cm]
-        \item b \\[0.5cm]
-        \item[$\rightarrow$] \textbf{c}
+        \fill [draw=none, fill=white, fill opacity=0.8] (image.north west) -- (image.north east) -- (image.south east) -- (image.south west) -- (image.north west) -- cycle;
+\node[] at (image.center) {\vbox {\normalsize
+    {\begin{block}{\centering Stable isotope tracing:}
+    \vspace{0.2cm}
+\includegraphics[width=\textwidth]{figures/Llufrio_2019_fig1.pdf}
+\centering
+\tiny{Llufrio, Cho \& Patti \textit{Nature Protocols} (2019)}\\[0.2cm]
+    \vspace{0.1cm}
+    \end{block}
+}
+}};
+}
+\end{tikzpicture}
+\end{figure}
+}
+\blfootnote{ACO: aconitase; ACL: ATP citrate lyase}
+\end{frame}
+
+\begin{frame}{Two modes of TCA-cycle metabolism}
+
+\uncover<1,2>{
+\begin{figure}
+\begin{tikzpicture}
+\node[anchor=south west,inner sep=0] (image) at (4,0) {\includegraphics[width=0.98\textwidth]{figures/Arnold_2022_fig1.pdf}};
+    \only<2>{%
+        \fill [draw=none, fill=white, fill opacity=0.8] (image.north west) -- (image.north east) -- (image.south east) -- (image.south west) -- (image.north west) -- cycle;
+\node[] at (image.center) {\vbox {\normalsize
+    {\begin{block}{\centering Main points:}
+    \vspace{0.2cm}
+    \begin{itemize}
+        \item Mapping 2 distinct gene cluster onto TCA cycle suggest clear division up-/downstream of citrate \\[0.3cm]
+        \item \textbf{Hypothesis}: ACL may support metabolic demands by forming a non-canonical TCA cycle, capable of continuous oxaloacetate regeneration for citrate production \\[0.3cm]
+        \item \textsuperscript{13}C labelled $\frac{malate}{citrate}$ ratio to monitor canonical vs. non-canonical TCA-cycle activity
+    \end{itemize}
+    \vspace{0.3cm}
+    \end{block}
+\vspace{0.3cm}
+    \begin{itemize}
+    \centering
+        \item[$\rightarrow$] \Large\textbf{What about non-transformed cells?}
     \end{itemize}}
 }};
 }
 \end{tikzpicture}
 \end{figure}
 }
+\blfootnote{ACO: aconitase; ACL: ATP citrate lyase}
 \end{frame}
 
 \begin{frame}{ES cells engage a non-canonical TCA cycle}
@@ -118,7 +153,7 @@
 \end{frame}
 
 \begin{frame}{TCA-cycle choice is cell-state dependent}
-\includegraphics[width=0.4\textwidth]{figures/Arnold_2022_fig3.pdf}
+\includegraphics[width=0.4\textwidth]{figures/Arnold_2022_fig3_2.pdf}
 \end{frame}
 
 \begin{frame}{TCA-cycle switch after pluripotency exit}
