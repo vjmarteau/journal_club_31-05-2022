@@ -72,9 +72,10 @@
 
 \includegraphics[width=0.8\textwidth]{figures/depmap_consortium_logo.pdf}\\[0.3cm]
 \begin{itemize}
-    \item Test
-    \item 
-    \item 
+    \item \textbf{Project goal:} Systematic identification of cancer dependencies \\[0.1cm]
+    \item Genome-scale loss-of-function screens performed in diverse human cancer cell lines \\[0.1cm]
+    \item Dependency score: Function of both the magnitude of the differential dependency and its prevalence in cell line collection
+    
 \end{itemize}
 
 \column{0.5\linewidth}
@@ -105,7 +106,7 @@
     \vspace{0.2cm}
 \includegraphics[width=\textwidth]{figures/Llufrio_2019_fig1.pdf}
 \centering
-\tiny{Llufrio, Cho \& Patti \textit{Nature Protocols} (2019)}\\[0.2cm]
+\tiny{Llufrio, Cho \& Patti; \textit{Nature Protocols} (2019)}\\[0.2cm]
     \vspace{0.1cm}
     \end{block}
 }
@@ -129,7 +130,7 @@
     {\begin{block}{\centering Main points:}
     \vspace{0.2cm}
     \begin{itemize}
-        \item Mapping 2 distinct gene cluster onto TCA cycle suggest clear division up-/downstream of citrate \\[0.3cm]
+        \item Mapping gene cluster onto TCA cycle suggest clear division up-/downstream of citrate \\[0.3cm]
         \item \textbf{Hypothesis}: ACL may support metabolic demands by forming a non-canonical TCA cycle, capable of continuous oxaloacetate regeneration for citrate production \\[0.3cm]
         \item \textsuperscript{13}C labelled $\frac{malate}{citrate}$ ratio to monitor canonical vs. non-canonical TCA-cycle activity
     \end{itemize}
@@ -148,23 +149,43 @@
 \blfootnote{ACO: aconitase; ACL: ATP citrate lyase}
 \end{frame}
 
-\begin{frame}{ES cells engage a non-canonical TCA cycle}
-\includegraphics[width=0.4\textwidth]{figures/Arnold_2022_fig2.pdf}
+\begin{frame}{Embryonic stem cells engage a non-canonical TCA cycle}
+
+\begin{columns}			
+\column{0.5\linewidth}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/Arnold_2022_fig2.pdf}
+
+\column{0.5\linewidth}
+
+\begin{itemize}
+    \item Test
+    \item 
+    \item 
+\end{itemize}
+\end{columns}
+
 \end{frame}
+
 
 \begin{frame}{TCA-cycle choice is cell-state dependent}
 \includegraphics[width=0.4\textwidth]{figures/Arnold_2022_fig3_2.pdf}
 \end{frame}
 
-\begin{frame}{TCA-cycle switch after pluripotency exit}
-\includegraphics[width=\textwidth]{figures/Arnold_2022_fig4.pdf}
-\end{frame}
-
 \begin{frame}{Exit from pluripotency requires ACL}
+\includegraphics[width=\textwidth]{figures/Arnold_2022_fig4.pdf}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+    \item Test
+    \item 
+    \item 
+\end{itemize}
 
 \end{frame}
 
-\begin{frame}{Summary}
+\begin{frame}{Take home messages}
 \begin{itemize}
     \item[$\rightarrow$] \textbf{Identification of a non-canonical TCA cycle required for changes in cell state} \\[0.3cm]
     \item[$\rightarrow$] \textbf{Genetic co-essentiality mapping revealed gene cluster sufficient to compose alternative to canonical TCA-cycle}
@@ -172,13 +193,47 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Questions to be addressed}
+\begin{frame}{Cancer Dependency Map}
 
+\begin{columns}			
+\column{0.6\linewidth}
+
+\includegraphics[width=0.8\textwidth]{figures/depmap_consortium_logo.pdf}\\[0.3cm]
+\begin{itemize}
+    \item \textbf{Project goal:} Systematic identification of genetic and pharmacologic cancer dependencies and the biomarkers that predict them
+\end{itemize}
+
+\column{0.5\linewidth}
+\centering
+\includegraphics[width=\textwidth]{figures/depmapmodel.png}
+
+\end{columns}
+
+\blfootnote{\includegraphics[width=0.12\textwidth]{figures/depmap_consortium_logo2.pdf}}
 \end{frame}
 
-\begin{frame}{Take home messages}
+\begin{frame}{Cancer Dependency Map}
 
-Include Otto Warburg Grant Proposal?
+\begin{columns}			
+\column{0.6\linewidth}
+
+\begin{itemize}
+    \item Achilles project 22Q2 release: 17,387 genes were screened in 1086 cell lines \\[0.2cm]
+    \item[$\rightarrow$] \textbf{R} Bioconductor package: "depmap" \\[0.2cm]
+    \item[$\rightarrow$] \textbf{Python} PyPI package: "depmap-downloader"
+\end{itemize}
+
+\column{0.5\linewidth}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/depmap_cell_lines_bubble_graph.pdf}
+
+\end{columns}
+
+\blfootnote{\includegraphics[width=0.12\textwidth]{figures/depmap_consortium_logo2.pdf}}
+\end{frame}
+
+\begin{frame}{DepMap Data Explorer}
+\includegraphics[width=\textwidth]{figures/Depmap_explorer_screenshot.png}
 \end{frame}
 
 \end{document}
